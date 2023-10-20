@@ -1,0 +1,58 @@
+.cards-container {
+  background-color: $secondary-color;
+  padding: 2rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  justify-items: center;
+  margin-bottom: 2rem;
+  @media only screen and (max-width: 640px) {
+    grid-template-columns: 1fr;
+    background-color: unset;
+  }
+}
+
+.card {
+  border-radius: 1rem;
+  height: 100%;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+    .card-image {
+      opacity: 0.5;
+    }
+  }
+}
+
+.card-darker {
+  position: absolute;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
+  border-radius: 1rem;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.card-image {
+  border-radius: 1rem;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-title {
+  bottom: 1.5rem;
+  color: #ffffff;
+  font-size: 1.1rem;
+  left: 1.5rem;
+  margin-right: 1.5rem;
+  position: absolute;
+}
+
+@media screen and (max-width: 1490px) {
+  .card {
+    min-height: 255px;
+  }
+}

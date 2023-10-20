@@ -1,0 +1,36 @@
+.collapse-dropdown {
+  width: 100%;
+  margin: 1rem 0rem;
+
+  &_container {
+    padding: 0rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: $tertiary-color;
+    background-color: $primary-color;
+    border-radius: 0.5rem;
+
+    > h1 {
+      font-size: 1.125rem;
+      font-family: "MontserratLight", sans-serif;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &_content {
+    background-color: $secondary-color;
+    padding: 1rem;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    > p {
+      padding: 0rem 1rem;
+      font-size: 1.125rem;
+      font-family: "MontserratLight", sans-serif;
+      color: $primary-color;
+    }
+  }
+}

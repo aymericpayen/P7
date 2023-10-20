@@ -1,0 +1,67 @@
+.flat-descriptions {
+  display: flex;
+  justify-content: space-between;
+
+  &_info {
+    h1 {
+      font-family: "MontserratMedium", sans-serif;
+      color: $primary-color;
+      font-size: 2.25rem;
+    }
+    p {
+      font-family: "MontserratLight", sans-serif;
+      color: $primary-color;
+      font-size: 1.2rem;
+    }
+    &-tags {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+      &_tag {
+        background-color: $primary-color;
+        color: $secondary-color;
+        padding: 0.5rem;
+        border-radius: 0.5rem;
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        font-family: "MontserratLight", sans-serif;
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+.flat-descriptions-tags {
+  display: flex;
+  justify-content: flex-start;
+  &_tag {
+    background-color: $primary-color;
+    color: $tertiary-color;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "MontserratLight", sans-serif;
+    font-size: 0.875rem;
+  }
+}
+
+.flat-host {
+  display: grid;
+  align-content: center;
+  font-size: 1.125rem;
+  font-family: "MontserratLight", sans-serif;
+  &_rating {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.flat-descriptions-details {
+  display: grid;
+  flex-direction: column;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}

@@ -1,0 +1,12 @@
+.rating-info {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.star {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+  color: $primary-color;
+}

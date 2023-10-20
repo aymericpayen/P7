@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 9em;
+  }
+
+  & img {
+    height: 95%;
+
+    @media only screen and (max-width: 640px) {
+      height: 4rem;
+    }
+  }
+
+  & nav {
+    justify-content: flex-end;
+    display: flex;
+    width: 100%;
+
+    @media only screen and (max-width: 640px) {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+    }
+
+    & .navlink {
+      color: $primary-color;
+      margin-left: 6rem;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+
+      @media only screen and (max-width: 640px) {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.host-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &_names {
+    display: grid;
+    justify-items: end;
+  }
+  &_avatar {
+    border-radius: 10rem;
+    width: 5rem;
+    margin-left: 2rem;
+  }
+}
+
+.host-name {
+  font-family: "MontserratLight", sans-serif;
+  display: flex;
+  align-items: center;
+  color: $primary-color;
+  font-size: 1.125rem;
+}

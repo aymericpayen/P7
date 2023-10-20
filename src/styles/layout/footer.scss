@@ -1,0 +1,13 @@
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $primary-color;
+
+  @media only screen and (max-width: 640px) {
+    flex-direction: column;
+    margin-top: 30px;
+    justify-content: space-around;
+    height: 9em;
+  }
+}

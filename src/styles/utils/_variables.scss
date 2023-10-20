@@ -1,0 +1,40 @@
+$primary-color: #ff6060;
+$secondary-color: #f7f7f7;
+$tertiary-color: #ffffff;
+$footer-color: #000000;
+$background-color: rgba(0, 0, 0, 0.3);
+
+@font-face {
+  font-family: "Montserrat"; // Give your font a name
+  src: url("@/assets/fonts/Montserrat-Regular.ttf") format("truetype"); // Replace 'path-to-your-font' with the actual path to your font file.
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratMedium"; // Give your font a name
+  src: url("@/assets/fonts/Montserrat-Medium.ttf") format("truetype"); // Replace 'path-to-your-font' with the actual path to your font file.
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratBold"; // Give your font a name
+  src: url("@/assets/fonts/Montserrat-Bold.ttf") format("truetype"); // Replace 'path-to-your-font' with the actual path to your font file.
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratSemiBold"; // Give your font a name
+  src: url("@/assets/fonts/Montserrat-SemiBold.ttf") format("truetype"); // Replace 'path-to-your-font' with the actual path to your font file.
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MontserratLight"; // Give your font a name
+  src: url("@/assets/fonts/Montserrat-Light.ttf") format("truetype"); // Replace 'path-to-your-font' with the actual path to your font file.
+  font-weight: normal;
+  font-style: normal;
+}
