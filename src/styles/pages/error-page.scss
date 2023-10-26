@@ -1,0 +1,24 @@
+.error-page {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  color: $primary-color;
+  margin: 0rem;
+  padding: 0rem;
+  > h1 {
+    margin: 0rem;
+    font-family: "MontserratMedium", sans-serif;
+    font-size: 18rem;
+  }
+  > p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.25rem;
+  }
+}
+
+.navlink {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.125rem;
+  color: $primary-color;
+  text-decoration: underline;
+}

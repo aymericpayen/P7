@@ -29,11 +29,17 @@
   height: 40px;
   padding: 10px;
   border: none;
-  border-radius: 50%;
   z-index: 10px;
   cursor: pointer;
-  background-color: #fff;
-  font-size: 18px;
+  background-color: transparent;
+  font-size: 6rem;
+  color: $tertiary-color;
+}
+
+@media only screen and (max-width: 640px) {
+  .btn {
+    font-size: 3rem;
+  }
 }
 
 .btn:active {
@@ -41,11 +47,19 @@
 }
 
 .btn-prev {
-  top: 45%;
+  top: 25%;
   left: 2%;
 }
 
 .btn-next {
-  top: 45%;
-  right: 2%;
+  top: 25%;
+  right: 4%;
+}
+
+.image-count {
+  position: absolute;
+  color: $tertiary-color;
+  font-size: 1rem;
+  top: 85%;
+  right: 49%;
 }

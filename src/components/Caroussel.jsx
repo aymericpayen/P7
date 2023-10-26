@@ -3,13 +3,11 @@ import { useState } from "react";
 /* eslint-disable react/prop-types */
 const Caroussel = ({ images }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  console.log(images);
   const next = () => {
     setCurrentIndex((previousIndex) =>
       previousIndex + 1 === images.length ? 0 : previousIndex + 1
     );
   };
-  console.log(currentIndex);
   const previous = () => {
     setCurrentIndex((previousIndex) =>
       previousIndex === 0 ? images.length - 1 : previousIndex - 1
@@ -32,6 +30,9 @@ const Caroussel = ({ images }) => {
         <button className="btn btn-prev" onClick={() => previous()}>
           {"<"}
         </button>
+        <div className="image-count">
+          {currentIndex + 1} / {images.length}
+        </div>
       </div>
     </>
   );

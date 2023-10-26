@@ -26,11 +26,13 @@ const Collapse = ({ title, content, nextLine = false }) => {
           {!nextLine ? (
             <p>{content}</p>
           ) : (
-            content.map((item, key) => (
-              <>
-                <p key={key}>{item}</p>
-              </>
-            ))
+            <ul>
+              {content.map((item, key) => (
+                <>
+                  <li key={key}>{item}</li>
+                </>
+              ))}
+            </ul>
           )}
         </div>
       )}

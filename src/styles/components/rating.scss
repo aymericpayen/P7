@@ -4,6 +4,12 @@
   margin-top: 1rem;
 }
 
+@media only screen and (max-width: 640px) {
+  .rating-info {
+    margin-top: 0rem;
+  }
+}
+
 .star {
   width: 1.5rem;
   height: 1.5rem;

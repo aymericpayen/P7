@@ -1,16 +1,14 @@
-import { useRouteError } from "react-router-dom";
+/* eslint-disable react/no-unescaped-entities */
+import { NavLink } from "react-router-dom";
 
 const ErrorPage = () => {
-  const error = useRouteError();
-  console.error(error);
-
   return (
-    <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Sorry, an unexpected error has occurred.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
+    <div className="error-page">
+      <h1>404</h1>
+      <p>Oups! La page que vous demandez n'existe pas.</p>
+      <NavLink to="/home" className="navlink">
+        Retourner sur la page d’accueil
+      </NavLink>
     </div>
   );
 };

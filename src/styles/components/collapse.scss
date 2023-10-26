@@ -1,6 +1,11 @@
 .collapse-dropdown {
   width: 100%;
   margin: 1rem 0rem;
+  // transition: all 1s ease-in-out;
+  // create key frame for smooth apparition
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
 
   &_container {
     padding: 0rem 1rem;
@@ -10,6 +15,9 @@
     color: $tertiary-color;
     background-color: $primary-color;
     border-radius: 0.5rem;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    transition-delay: 0.3s;
 
     > h1 {
       font-size: 1.125rem;
@@ -23,7 +31,7 @@
 
   &_content {
     background-color: $secondary-color;
-    padding: 1rem;
+    padding: 1rem 0rem 1rem 0rem;
     border-bottom-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
     > p {
@@ -31,6 +39,16 @@
       font-size: 1.125rem;
       font-family: "MontserratLight", sans-serif;
       color: $primary-color;
+    }
+    > ul {
+      padding: 0rem;
+      > li {
+        padding: 0rem 1rem;
+        font-size: 1.125rem;
+        font-family: "MontserratLight", sans-serif;
+        color: $primary-color;
+        list-style-type: none;
+      }
     }
   }
 }

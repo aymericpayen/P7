@@ -1,13 +1,11 @@
 footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  color: $primary-color;
-
-  @media only screen and (max-width: 640px) {
-    flex-direction: column;
-    margin-top: 30px;
-    justify-content: space-around;
-    height: 9em;
-  }
+  text-align: center;
+  padding: 2rem 0rem 3rem 0rem;
+  display: grid;
+  background-color: black;
+  justify-items: center;
+  color: $tertiary-color;
+  font-family: "MontserratLight", sans-serif;
+  font-size: 1.5rem;
+  height: 10vh;
 }

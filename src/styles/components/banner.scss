@@ -28,5 +28,17 @@
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
+    @media only screen and (max-width: 640px) {
+      font-size: 1.5rem;
+      left: 35%;
+      position: absolute;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .banner {
+    height: 9rem;
+    
   }
 }
