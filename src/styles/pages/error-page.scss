@@ -5,6 +5,7 @@
   color: $primary-color;
   margin: 0rem;
   padding: 0rem;
+  text-align: center;
   > h1 {
     margin: 0rem;
     font-family: "MontserratMedium", sans-serif;
@@ -21,4 +22,19 @@
   font-size: 1.125rem;
   color: $primary-color;
   text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .error-page {
+    > h1 {
+      font-size: 6rem;
+    }
+    > p {
+      font-size: 1.125rem;
+    }
+    > a {
+      font-size: 0.825rem;
+    }
+  }
 }

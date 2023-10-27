@@ -33,7 +33,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 10vh;
   font-family: "MontserratLight", sans-serif;
 }
 header img {
@@ -81,29 +80,31 @@ footer {
   font-family: "MontserratLight", sans-serif;
   font-size: 1.5rem;
   height: 10vh;
+  margin-top: auto;
 }
 
+@media only screen and (max-width: 640px) {
+  footer {
+    font-size: 0.75rem;
+  }
+}
 .layout {
   display: flex;
   flex-direction: column;
   padding: 0rem 1rem;
-  -webkit-appearance: none;
 }
 
-.main {
+main {
   margin-top: 2rem;
   max-width: 1440px;
-  margin: 2rem;
-}
-@media only screen and (max-width: 640px) {
-  .main {
-    margin: 0.5rem;
-  }
 }
 
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .banner {
@@ -318,6 +319,9 @@ body {
 .collapse-dropdown {
   width: 100%;
   margin: 1rem 0rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
 }
 .collapse-dropdown_container {
   padding: 0rem 1rem;
@@ -327,6 +331,9 @@ body {
   color: #ffffff;
   background-color: #ff6060;
   border-radius: 0.5rem;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s;
 }
 .collapse-dropdown_container > h1 {
   font-size: 1.125rem;
@@ -447,7 +454,6 @@ body {
 }
 .about {
   padding: 0rem 5rem;
-  transition: 1s ease-in-out;
 }
 
 @media only screen and (max-width: 640px) {
@@ -462,6 +468,7 @@ body {
   color: #ff6060;
   margin: 0rem;
   padding: 0rem;
+  text-align: center;
 }
 .error-page > h1 {
   margin: 0rem;
@@ -478,6 +485,19 @@ body {
   font-size: 1.125rem;
   color: #ff6060;
   text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .error-page > h1 {
+    font-size: 6rem;
+  }
+  .error-page > p {
+    font-size: 1.125rem;
+  }
+  .error-page > a {
+    font-size: 0.825rem;
+  }
 }
 
 /*# sourceMappingURL=output.css.map */
