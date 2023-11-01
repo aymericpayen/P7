@@ -22,7 +22,7 @@ const Collapse = ({ title, content, nextLine = false }) => {
         )}
       </div>
       {isOpen && (
-        <div className="collapse-dropdown_content">
+        <div className="collapse-dropdown_content slide-down">
           {!nextLine ? (
             <p>{content}</p>
           ) : (

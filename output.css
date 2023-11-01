@@ -34,7 +34,6 @@ header {
   justify-content: space-between;
   align-items: center;
   font-family: "MontserratLight", sans-serif;
-  max-width: 1440px;
 }
 header img {
   height: 95%;
@@ -356,6 +355,38 @@ body {
   list-style-type: none;
 }
 
+.slide-down {
+  animation-name: slideDown;
+  -webkit-animation-name: slideDown;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  visibility: visible !important;
+}
+
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideDown {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .flat-descriptions {
   display: flex;
   justify-content: space-between;

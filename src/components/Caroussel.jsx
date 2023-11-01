@@ -24,12 +24,17 @@ const Caroussel = ({ images }) => {
             <img src={image} alt="" />
           </div>
         ))}
-        <button className="btn btn-next" onClick={() => next()}>
-          {">"}
-        </button>
-        <button className="btn btn-prev" onClick={() => previous()}>
-          {"<"}
-        </button>
+
+        {images.length > 1 && (
+          <>
+            <button className="btn btn-next" onClick={() => next()}>
+              {">"}
+            </button>
+            <button className="btn btn-prev" onClick={() => previous()}>
+              {"<"}
+            </button>
+          </>
+        )}
         <div className="image-count">
           {currentIndex + 1} / {images.length}
         </div>
