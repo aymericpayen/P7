@@ -33,11 +33,11 @@ const Caroussel = ({ images }) => {
             <button className="btn btn-prev" onClick={() => previous()}>
               {"<"}
             </button>
+            <div className="image-count">
+              {currentIndex + 1} / {images.length}
+            </div>
           </>
         )}
-        <div className="image-count">
-          {currentIndex + 1} / {images.length}
-        </div>
       </div>
     </>
   );

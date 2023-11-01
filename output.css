@@ -52,7 +52,7 @@ header nav {
 }
 header nav .navlink {
   color: #ff6060;
-  margin-left: 6rem;
+  margin-left: 3rem;
   text-decoration: none;
   font-size: 1.5rem;
   font-weight: 500;
@@ -60,6 +60,7 @@ header nav .navlink {
 @media only screen and (max-width: 640px) {
   header nav .navlink {
     font-size: 0.75rem;
+    margin-left: 1rem;
   }
 }
 
@@ -82,7 +83,12 @@ footer {
 .layout {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem;
+  padding: 0rem 3rem;
+}
+@media only screen and (max-width: 640px) {
+  .layout {
+    padding: 0rem 1rem;
+  }
 }
 
 main {

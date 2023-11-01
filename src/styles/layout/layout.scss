@@ -1,7 +1,10 @@
 .layout {
   display: flex;
   flex-direction: column;
-  padding: 0rem 1rem;
+  padding: 0rem 3rem;
+  @media only screen and (max-width: 640px) {
+    padding: 0rem 1rem;
+  }
 }
 main {
   // margin-top: 2rem;

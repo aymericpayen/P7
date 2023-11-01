@@ -22,13 +22,14 @@ header {
 
     & .navlink {
       color: $primary-color;
-      margin-left: 6rem;
+      margin-left: 3rem;
       text-decoration: none;
       font-size: 1.5rem;
       font-weight: 500;
 
       @media only screen and (max-width: 640px) {
         font-size: 0.75rem;
+        margin-left: 1rem;
       }
     }
   }
