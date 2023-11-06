@@ -27,10 +27,8 @@ const Collapse = ({ title, content, nextLine = false }) => {
             <p>{content}</p>
           ) : (
             <ul>
-              {content.map((item, key) => (
-                <>
-                  <li key={key}>{item}</li>
-                </>
+              {content.map((item) => (
+                <li key={`eq-${item}`}>{item}</li>
               ))}
             </ul>
           )}
