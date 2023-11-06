@@ -58,11 +58,16 @@ const Logement = () => {
           </div>
         </div>
         <div className="flat-descriptions-details">
-          <Collapse title="Description" content={flat.description} />
+          <Collapse
+            title="Description"
+            content={flat.description}
+            key={`desciprition.${flat.id}`}
+          />
           <Collapse
             nextLine={true}
             title="Équipements"
             content={flat.equipments}
+            key={`equipments.${flat.id}`}
           />
         </div>
       </section>

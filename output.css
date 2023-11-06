@@ -127,6 +127,7 @@ body {
 .banner_txt {
   color: #ffffff;
   font-size: 3rem;
+  font-family: "MontserratMedium", sans-serif;
   left: 50%;
   position: absolute;
   top: 50%;
@@ -146,6 +147,7 @@ body {
   }
 }
 .cards-container {
+  font-family: "MontserratLight", sans-serif;
   background-color: #f7f7f7;
   padding: 2rem;
   border-radius: 1rem;

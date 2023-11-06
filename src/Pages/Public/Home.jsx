@@ -11,7 +11,12 @@ const Home = () => {
         <div className="cards-container">
           {FlatsService.GetFlats().map(
             (flat) => (
-              <Card title={flat.title} id={flat.id} image={flat.cover} />
+              <Card
+                title={flat.title}
+                id={flat.id}
+                image={flat.cover}
+                key={flat.id}
+              />
             )
             // <Card title={logement.title} />,
           )}
