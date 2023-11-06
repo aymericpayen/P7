@@ -19,7 +19,6 @@ const Logement = () => {
   const getInfo = async () => {
     await FlatsService.GetOneFlat(id)
       .then((response) => {
-        console.log(response);
         if (response) {
           setFlat(response);
           setIsLoading(false);
